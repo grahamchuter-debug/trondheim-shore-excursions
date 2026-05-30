@@ -24,12 +24,12 @@ export type CruisePortDayPlannerConfig = {
   tiers: readonly PortTimeTier[];
 };
 
-export const kristiansandPortDayPlannerConfig: CruisePortDayPlannerConfig = {
-  portName: "Kristiansand",
-  heading: "Kristiansand Cruise Smart Planner™",
+export const trondheimPortDayPlannerConfig: CruisePortDayPlannerConfig = {
+  portName: "Trondheim",
+  heading: "Trondheim Cruise Smart Planner™",
   subtitle: "Plan your shore excursions around your actual time in port.",
   supportingCopy:
-    "Built specifically for cruise passengers visiting Kristiansand's walkable harbourfront.",
+    "Built specifically for cruise passengers visiting Trondheim's walkable historic centre and riverfront.",
   returnBufferNote:
     "Always confirm your cruise line's official all-aboard time, as this may be earlier than the published departure time.",
   tiers: [
@@ -40,21 +40,21 @@ export const kristiansandPortDayPlannerConfig: CruisePortDayPlannerConfig = {
       confidenceScore: 45,
       confidenceLabel: "Tight Port Call",
       confidenceMessage:
-        "Best suited to compact harbour walks. Focus on Fiskebrygga, Christiansholm Fortress, and the waterfront promenade.",
+        "Best suited to compact city walks. Focus on Nidaros Cathedral exterior, main square, and a brief waterfront stroll.",
       excursions: [
         {
-          label: "Walking Exploration of Kristiansand",
-          href: "/excursions/walking-exploration-kristiansand",
+          label: "Trondheim City Walk",
+          href: "/excursions/trondheim-city-walk",
         },
         {
-          label: "Harbour, Fortress and Fish Market Walk",
-          href: "/excursions/harbour-fortress-fish-market",
+          label: "Trondheim Waterfront Guided Tour",
+          href: "/excursions/trondheim-waterfront-tour",
         },
       ],
       dayPlan: [
         "Disembark promptly and stay within walking distance of the cruise pier",
-        "Walk Fiskebrygga fish market and the harbour promenade",
-        "Visit Christiansholm Fortress if time allows",
+        "Walk to Nidaros Cathedral and the main square if time allows",
+        "Add a short Nidelva waterfront section only if return times are confirmed",
         "Be back at the gangway by your recommended return time",
       ],
     },
@@ -65,25 +65,25 @@ export const kristiansandPortDayPlannerConfig: CruisePortDayPlannerConfig = {
       confidenceScore: 70,
       confidenceLabel: "Good Short Port Call",
       confidenceMessage:
-        "Enough time for city highlights, a relaxed harbour walk, or a family beach outing near Bystranda.",
+        "Enough time for the full city walk, a waterfront photo route, or a private custom tour with flexible pacing.",
       excursions: [
         {
-          label: "Kristiansand Highlights",
-          href: "/excursions/kristiansand-highlights",
+          label: "Trondheim City Walk",
+          href: "/excursions/trondheim-city-walk",
         },
         {
-          label: "Walking Exploration of Kristiansand",
-          href: "/excursions/walking-exploration-kristiansand",
+          label: "Trondheim Waterfront Guided Tour",
+          href: "/excursions/trondheim-waterfront-tour",
         },
         {
-          label: "Family and Beach Day",
-          href: "/excursions/family-beach-day",
+          label: "Private Custom Trondheim Tour",
+          href: "/excursions/private-custom-trondheim-tour",
         },
       ],
       dayPlan: [
-        "Arrive in Kristiansand and head to your excursion meeting point or start a harbour walk",
-        "Morning: Highlights tour or walking exploration of the fish market and fortress",
-        "Add Bystranda beach time only if return times are confirmed",
+        "Arrive in Trondheim and head to your excursion meeting point or start a city walk",
+        "Morning: City Walk covering cathedral, Bakklandet and Old Town Bridge",
+        "Alternative: Waterfront tour along the Nidelva and harbour",
         "Allow 45 minutes before all aboard to reach the cruise port",
       ],
     },
@@ -94,21 +94,22 @@ export const kristiansandPortDayPlannerConfig: CruisePortDayPlannerConfig = {
       confidenceScore: 90,
       confidenceLabel: "Strong Port Call",
       confidenceMessage:
-        "Ideal for the headline city tour or the Baneheia and Ravnedalen nature trek with comfortable return margins.",
+        "Ideal for the Nature and City Hike, a private custom tour, or combining city walk with waterfront time.",
       excursions: [
         {
-          label: "Baneheia and Ravnedalen Nature Trek",
-          href: "/excursions/baneheia-ravnedalen-nature-trek",
+          label: "Trondheim Nature and City Hike",
+          href: "/excursions/trondheim-nature-city-hike",
         },
         {
-          label: "Kristiansand Highlights",
-          href: "/excursions/kristiansand-highlights",
+          label: "Private Custom Trondheim Tour",
+          href: "/excursions/private-custom-trondheim-tour",
         },
+        { label: "City Walk plus waterfront time" },
       ],
       dayPlan: [
-        "Arrive in Kristiansand and confirm your first excursion departure",
-        "Morning: Kristiansand Highlights or Baneheia and Ravnedalen nature trek",
-        "Midday: Lunch at Fiskebrygga or a short harbour stroll if time allows",
+        "Arrive in Trondheim and confirm your first excursion departure",
+        "Morning: Nature and City Hike or Private Custom Trondheim Tour",
+        "Midday: Lunch near Solsiden or the main square if time allows",
         "Return to port by recommended return time",
       ],
     },
@@ -119,25 +120,25 @@ export const kristiansandPortDayPlannerConfig: CruisePortDayPlannerConfig = {
       confidenceScore: 95,
       confidenceLabel: "Excellent Full Day",
       confidenceMessage:
-        "Combine headline touring with relaxed harbour, beach, or museum time for an unhurried southern Norway city break.",
+        "Combine private custom touring with relaxed historic centre exploration for an unhurried Trondheim city break.",
       conversionNote:
-        "Most cruise passengers with 6+ hours in Kristiansand combine the Highlights tour with Baneheia and Ravnedalen, then finish with relaxed harbour, beach, or museum time.",
+        "Most cruise passengers with 6+ hours in Trondheim choose a Private Custom Trondheim Tour or the Nature and City Hike, then finish with relaxed city exploration around Bakklandet and the wharves.",
       excursions: [
         {
-          label: "Kristiansand Highlights",
-          href: "/excursions/kristiansand-highlights",
+          label: "Private Custom Trondheim Tour",
+          href: "/excursions/private-custom-trondheim-tour",
         },
         {
-          label: "Baneheia and Ravnedalen Nature Trek",
-          href: "/excursions/baneheia-ravnedalen-nature-trek",
+          label: "Trondheim Nature and City Hike",
+          href: "/excursions/trondheim-nature-city-hike",
         },
-        { label: "Relaxed harbour, beach or museum time" },
+        { label: "Relaxed city exploration" },
       ],
       dayPlan: [
         "Arrive early and confirm your first excursion departure",
-        "Morning: Kristiansand Highlights city-and-culture tour",
-        "Midday: Lunch at Fiskebrygga or Bystranda beach area",
-        "Afternoon: Baneheia and Ravnedalen nature trek or unhurried harbour sightseeing",
+        "Morning: Private Custom Trondheim Tour or Nature and City Hike",
+        "Midday: Lunch near the waterfront or main square",
+        "Afternoon: Unhurried Bakklandet, cathedral, or museum time",
         "Keep the final hour free near the cruise pier for a calm return to ship",
       ],
     },
@@ -146,24 +147,24 @@ export const kristiansandPortDayPlannerConfig: CruisePortDayPlannerConfig = {
 
 export const plannerInterestGroups = [
   {
-    title: "Active",
+    title: "Easy walking",
     items: [
       {
-        label: "Baneheia and Ravnedalen Nature Trek",
-        href: "/excursions/baneheia-ravnedalen-nature-trek",
+        label: "Trondheim City Walk",
+        href: "/excursions/trondheim-city-walk",
+      },
+      {
+        label: "Trondheim Waterfront Guided Tour",
+        href: "/excursions/trondheim-waterfront-tour",
       },
     ],
   },
   {
-    title: "Easy walking",
+    title: "Active",
     items: [
       {
-        label: "Walking Exploration of Kristiansand",
-        href: "/excursions/walking-exploration-kristiansand",
-      },
-      {
-        label: "Harbour, Fortress and Fish Market Walk",
-        href: "/excursions/harbour-fortress-fish-market",
+        label: "Trondheim Nature and City Hike",
+        href: "/excursions/trondheim-nature-city-hike",
       },
     ],
   },
@@ -171,8 +172,17 @@ export const plannerInterestGroups = [
     title: "Family",
     items: [
       {
-        label: "Kristiansand Family and Beach Day",
-        href: "/excursions/family-beach-day",
+        label: "Trondheim Family Walking Tour",
+        href: "/excursions/trondheim-family-walking-tour",
+      },
+    ],
+  },
+  {
+    title: "Private",
+    items: [
+      {
+        label: "Private Custom Trondheim Tour",
+        href: "/excursions/private-custom-trondheim-tour",
       },
     ],
   },

@@ -4,52 +4,52 @@ import { siteConfig } from "@/lib/site-config";
 
 const planYourVisitLinks = [
   { label: "All Excursions", href: "/excursions" },
-  { label: "Kristiansand Port Guide", href: "/kristiansand-port-guide" },
-  { label: "One Day in Kristiansand", href: "/one-day-in-kristiansand" },
+  { label: "Trondheim Port Guide", href: "/trondheim-port-guide" },
+  { label: "One Day in Trondheim", href: "/one-day-in-trondheim" },
   {
-    label: "Is Kristiansand Worth Visiting?",
-    href: "/is-kristiansand-worth-visiting",
+    label: "Is Trondheim Worth Visiting?",
+    href: "/is-trondheim-worth-visiting",
   },
   {
-    label: "Best Time to Visit Kristiansand",
-    href: "/best-time-to-visit-kristiansand",
+    label: "Best Time to Visit Trondheim",
+    href: "/best-time-to-visit-trondheim",
   },
 ] as const;
 
 const cruiseToolsLinks = [
   {
-    label: "Kristiansand Highlights",
-    href: "/excursions/kristiansand-highlights",
+    label: "Trondheim City Walk",
+    href: "/excursions/trondheim-city-walk",
   },
   {
-    label: "Baneheia & Ravnedalen Trek",
-    href: "/excursions/baneheia-ravnedalen-nature-trek",
+    label: "Waterfront Guided Tour",
+    href: "/excursions/trondheim-waterfront-tour",
   },
   {
-    label: "Walking Exploration",
-    href: "/excursions/walking-exploration-kristiansand",
+    label: "Nature and City Hike",
+    href: "/excursions/trondheim-nature-city-hike",
   },
   {
-    label: "Family & Beach Day",
-    href: "/excursions/family-beach-day",
+    label: "Family Walking Tour",
+    href: "/excursions/trondheim-family-walking-tour",
   },
 ] as const;
 
 const whyBookWithUs = [
   "Cruise passenger friendly",
   "Return to ship timing guidance",
-  "Southern Norway specialists",
+  "Local Trondheim guides",
 ] as const;
 
 const trustBullets = [
   "Return-to-ship friendly itineraries",
-  "Walkable cruise port planning",
-  "Harbour, beach and forest trail expertise",
+  "Walkable cruise city planning",
+  "Historic centre and riverfront expertise",
 ] as const;
 
 const ctaSecondaryLinks = [
-  { label: "Kristiansand Port Guide", href: "/kristiansand-port-guide" },
-  { label: "One Day in Kristiansand", href: "/one-day-in-kristiansand" },
+  { label: "Trondheim Port Guide", href: "/trondheim-port-guide" },
+  { label: "One Day in Trondheim", href: "/one-day-in-trondheim" },
 ] as const;
 
 function FooterColumn({
@@ -75,11 +75,11 @@ export function SiteFooter() {
       <section className="border-t border-white/10 bg-navy text-white">
         <div className="mx-auto max-w-3xl px-4 py-10 text-center sm:px-6 sm:py-12">
           <h2 className="text-xl font-bold sm:text-2xl">
-            Ready to plan your Kristiansand cruise day?
+            Ready to plan your Trondheim cruise day?
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-white/80 sm:text-base">
             Browse shore excursions, port guides, and planning tools designed
-            specifically for cruise passengers visiting Kristiansand.
+            specifically for cruise passengers visiting Trondheim.
           </p>
           <Link
             href={siteConfig.shoreExcursionsPath}
@@ -118,9 +118,9 @@ export function SiteFooter() {
                 {siteConfig.name}
               </Link>
               <p className="mt-3 max-w-sm text-sm leading-6 text-white/65">
-                Independent Kristiansand cruise port guides and shore excursion
-                planning for passengers visiting southern Norway&apos;s
-                harbourfront, beaches, fortress, and walkable city centre.
+                Independent Trondheim cruise port guides and shore excursion
+                planning for passengers visiting Nidaros Cathedral, Bakklandet,
+                the Old Town Bridge, and Trondheim&apos;s walkable riverfront.
               </p>
               <ul className="mt-4 space-y-2">
                 {trustBullets.map((item) => (

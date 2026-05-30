@@ -1,41 +1,41 @@
-/** Verified Wikimedia Commons thumb URLs (HTTP 200). */
+/** Wikimedia Commons thumb URLs for Trondheim imagery. */
 
-const kristiansandHarbour =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kristiansand_harbour.jpg/1280px-Kristiansand_harbour.jpg";
-const fiskebrygga =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Fiskebrygga%2C_Kristiansand.jpg/1280px-Fiskebrygga%2C_Kristiansand.jpg";
-const christiansholmFortress =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Christiansholm_festning_02.jpg/1280px-Christiansholm_festning_02.jpg";
-const bystranda =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bystranda_2014-07-21.JPG/1280px-Bystranda_2014-07-21.JPG";
-const baneheia =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Baneheia_Kjempesteinen.JPG/1280px-Baneheia_Kjempesteinen.JPG";
-const ravnedalen =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ravnedalen.jpg/1280px-Ravnedalen.jpg";
-const kilden =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Kristiansand_Kilden_teater_og_konserthus.jpg/1280px-Kristiansand_Kilden_teater_og_konserthus.jpg";
-const domkirke =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Kristiansand_domkirke.jpg/1280px-Kristiansand_domkirke.jpg";
+const nidarosCathedral =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nidaros_Cathedral_from_south.jpg/1280px-Nidaros_Cathedral_from_south.jpg";
+const bakklandet =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bakklandet_Trondeim.jpg/1280px-Bakklandet_Trondeim.jpg";
+const gamleBybro =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Gamle_Bybro_03.jpg/1280px-Gamle_Bybro_03.jpg";
+const trondheimWaterfront =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Trondheim_havn.jpg/1280px-Trondheim_havn.jpg";
+const nidelva =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nidelva_Trondheim.jpg/1280px-Nidelva_Trondheim.jpg";
+const historicalWharves =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Trondheim_-_Nedre_Bakkegata.jpg/1280px-Trondheim_-_Nedre_Bakkegata.jpg";
+const stiftsgarden =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Stiftsg%C3%A5rden_Trondheim.jpg/1280px-Stiftsg%C3%A5rden_Trondheim.jpg";
+const trondheimHarbour =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Trondheim_havn_2010.jpg/1280px-Trondheim_havn_2010.jpg";
 
 export const siteImages = {
-  hero: kristiansandHarbour,
-  harbour: kristiansandHarbour,
-  fiskebrygga,
-  christiansholmFortress,
-  bystranda,
-  baneheia,
-  ravnedalen,
-  kilden,
-  domkirke,
-  portGuide: kristiansandHarbour,
-  worthVisiting: fiskebrygga,
-  oneDay: christiansholmFortress,
-  bestTime: bystranda,
-  highlightsTour: kristiansandHarbour,
-  natureTrekTour: baneheia,
-  walkingTour: fiskebrygga,
-  harbourWalkTour: christiansholmFortress,
-  familyBeachTour: bystranda,
+  hero: nidarosCathedral,
+  nidarosCathedral,
+  bakklandet,
+  gamleBybro,
+  waterfront: trondheimWaterfront,
+  nidelva,
+  historicalWharves,
+  stiftsgarden,
+  harbour: trondheimHarbour,
+  portGuide: gamleBybro,
+  worthVisiting: bakklandet,
+  oneDay: nidarosCathedral,
+  bestTime: trondheimWaterfront,
+  cityWalkTour: nidarosCathedral,
+  waterfrontTour: nidelva,
+  natureHikeTour: bakklandet,
+  familyTour: gamleBybro,
+  privateTour: stiftsgarden,
   flamPortCard:
     "https://upload.wikimedia.org/wikipedia/commons/5/56/Fl%C3%A5m_fr%C3%A5_cruiseskip_ved_kai.jpg",
   bergenPortCard:
@@ -54,44 +54,48 @@ export const siteImages = {
     "https://upload.wikimedia.org/wikipedia/commons/b/b5/Molde_Hafen.jpg",
   honningsvagPortCard:
     "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Puerto_de_Honningsv%C3%A5g%2C_Noruega%2C_2019-09-03%2C_DD_88.jpg/1280px-Puerto_de_Honningsv%C3%A5g%2C_Noruega%2C_2019-09-03%2C_DD_88.jpg",
+  kristiansandPortCard:
+    "https://upload.wikimedia.org/wikipedia/commons/0/0a/Kristiansand_harbour_2015.jpg",
+  hellesyltPortCard:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Hellesyltfossen.jpg/1280px-Hellesyltfossen.jpg",
 } as const;
 
 export const imageAlts = {
-  hero: "Kristiansand harbour with cruise ships and waterfront, Kristiansand Shore Excursions",
+  hero: "Nidaros Cathedral in Trondheim, Trondheim Shore Excursions homepage hero",
+  nidarosCathedral:
+    "Nidaros Cathedral viewed from the south, Norway's national shrine in Trondheim",
+  bakklandet:
+    "Colourful wooden houses along Bakklandet across the Nidelva river in Trondheim",
+  gamleBybro:
+    "Gamle Bybro Old Town Bridge with red gates spanning the Nidelva in Trondheim",
+  waterfront:
+    "Trondheim waterfront and harbour with cruise-friendly city views",
+  nidelva:
+    "Nidelva river flowing through Trondheim with historic wharves and wooden buildings",
+  historicalWharves:
+    "Historic wharves and Nedre Bakkegata along the Nidelva in Trondheim",
+  stiftsgarden:
+    "Stiftsgården Royal Residence on Munkegata, Trondheim's main square area",
   harbour:
-    "Kristiansand cruise harbour and marina with southern Norway coastal scenery",
-  fiskebrygga:
-    "Fiskebrygga fish market and waterfront restaurants in Kristiansand harbour",
-  christiansholmFortress:
-    "Christiansholm Fortress on the Kristiansand harbourfront, 17th-century coastal defence",
-  bystranda:
-    "Bystranda city beach in central Kristiansand with sandy shore and promenade",
-  baneheia:
-    "Baneheia forest trails and viewpoints above Kristiansand city centre",
-  ravnedalen:
-    "Ravnedalen valley park with woodland paths and lakes near Kristiansand",
-  kilden:
-    "Kilden Performing Arts Centre on Kristiansand harbour with distinctive wooden architecture",
-  domkirke:
-    "Kristiansand Domkirke cathedral in the Kvadraturen town centre grid",
+    "Trondheim harbour with cruise berths and waterfront cityscape",
   portGuide:
-    "Kristiansand cruise port harbour, port guide for shore excursion passengers",
+    "Gamle Bybro Old Town Bridge, Trondheim cruise port guide for shore excursion passengers",
   worthVisiting:
-    "Fiskebrygga fish market on Kristiansand waterfront, is Kristiansand worth visiting",
+    "Bakklandet wooden houses, is Trondheim worth visiting on a cruise",
   oneDay:
-    "Christiansholm Fortress and harbourfront, one day in Kristiansand cruise itinerary",
+    "Nidaros Cathedral and historic Trondheim centre on a one-day cruise itinerary",
   bestTime:
-    "Bystranda beach in summer, best time to visit Kristiansand on a cruise",
-  highlightsCard:
-    "Kristiansand harbour and city highlights shore excursion for first-time visitors",
-  natureTrekCard:
-    "Baneheia forest trails, nature trek shore excursion from Kristiansand cruise port",
-  walkingCard:
-    "Fiskebrygga fish market, walking exploration shore excursion in Kristiansand",
-  harbourWalkCard:
-    "Christiansholm Fortress and harbour walk, short-port shore excursion Kristiansand",
-  familyBeachCard:
-    "Bystranda city beach, family and beach day shore excursion Kristiansand",
+    "Trondheim waterfront in summer light, best time to visit Trondheim on a cruise",
+  cityWalkCard:
+    "Nidaros Cathedral on the Trondheim City Walk shore excursion for cruise passengers",
+  waterfrontCard:
+    "Nidelva river and waterfront on the Trondheim Waterfront Guided Tour",
+  natureHikeCard:
+    "Bakklandet and city viewpoints on the Trondheim Nature and City Hike",
+  familyCard:
+    "Old Town Bridge and family-friendly streets on the Trondheim Family Walking Tour",
+  privateCard:
+    "Stiftsgården Royal Residence on a Private Custom Trondheim Tour",
   flamPortCard:
     "Flam harbour with a cruise ship at the pier, Flam Shore Excursions",
   bergenPortCard:
@@ -110,4 +114,8 @@ export const imageAlts = {
     "Molde harbour and Atlantic coast, Molde Shore Excursions",
   honningsvagPortCard:
     "Honningsvåg cruise harbour, Honningsvag Shore Excursions",
+  kristiansandPortCard:
+    "Kristiansand harbour waterfront, Kristiansand Shore Excursions",
+  hellesyltPortCard:
+    "Hellesyltfossen waterfall in Hellesylt village, Hellesylt Shore Excursions",
 } as const;

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import {
-  kristiansandPortDayPlannerConfig,
+  trondheimPortDayPlannerConfig,
   calculatePortMinutes,
   formatPortDuration,
   getConfidenceTone,
@@ -59,7 +59,7 @@ function RecommendationCard({
 }
 
 export function CruisePortDayPlanner({
-  config = kristiansandPortDayPlannerConfig,
+  config = trondheimPortDayPlannerConfig,
 }: CruisePortDayPlannerProps) {
   const [arrival, setArrival] = useState("");
   const [departure, setDeparture] = useState("");

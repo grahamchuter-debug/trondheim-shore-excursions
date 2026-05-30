@@ -52,12 +52,12 @@ export function ContentPage({
   faqs,
   breadcrumbs,
   belowHero,
-  ctaTitle = "Plan your Kristiansand shore excursion",
+  ctaTitle = "Plan your Trondheim shore excursion",
   ctaText = "Browse cruise-friendly tours designed around your ship's time in port, with enough margin to return before all aboard.",
   ctaHref = siteConfig.shoreExcursionsPath,
-  ctaButtonLabel = "View Kristiansand shore excursions",
+  ctaButtonLabel = "View Trondheim shore excursions",
   showShipReassurance = true,
-  relatedSectionTitle = "Related Kristiansand guides",
+  relatedSectionTitle = "Related Trondheim guides",
 }: ContentPageProps) {
   const schema = [
     buildWebPageSchema({

@@ -9,7 +9,7 @@ export function buildOrganizationSchema() {
     description: siteConfig.defaultDescription,
     areaServed: {
       "@type": "Place",
-      name: "Kristiansand, Agder, Norway",
+      name: "Trondheim, Trøndelag, Norway",
     },
   };
 }
@@ -92,7 +92,7 @@ export function buildBreadcrumbSchema(
 
 export function buildItemListSchema(
   items: readonly { name: string; description: string }[],
-  listName = "Popular Kristiansand shore excursions for cruise passengers",
+  listName = "Popular Trondheim shore excursions for cruise passengers",
 ) {
   return {
     "@context": "https://schema.org",

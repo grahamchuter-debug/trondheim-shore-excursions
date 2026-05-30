@@ -213,12 +213,12 @@ export function ExcursionDetailPage({ excursion }: ExcursionDetailPageProps) {
               </div>
               <p className="leading-7">
                 Read the{" "}
-                <Link href="/kristiansand-port-guide" className="content-link">
-                  Kristiansand port guide
+                <Link href="/trondheim-port-guide" className="content-link">
+                  Trondheim port guide
                 </Link>
                 , plan your day with our{" "}
-                <Link href="/one-day-in-kristiansand" className="content-link">
-                  one day in Kristiansand
+                <Link href="/one-day-in-trondheim" className="content-link">
+                  one day in Trondheim
                 </Link>{" "}
                 itinerary, and use the{" "}
                 <Link href="/#planner" className="content-link">
@@ -279,7 +279,7 @@ export function ExcursionDetailPage({ excursion }: ExcursionDetailPageProps) {
           <section className="bg-surface-muted">
             <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
               <h2 className="mb-4 text-xl font-bold text-slate-900">
-                Plan your Kristiansand port day
+                Plan your Trondheim port day
               </h2>
               <ul className="flex flex-wrap gap-3">
                 {excursion.relatedLinks.map((link) => (

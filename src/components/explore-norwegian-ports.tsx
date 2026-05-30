@@ -114,12 +114,12 @@ export function ExploreNorwegianPorts({
   );
 }
 
-export const explorePortsFromKristiansand: ExploreNorwegianPortsConfig = {
+export const explorePortsFromTrondheim: ExploreNorwegianPortsConfig = {
   intro: (
     <>
       If your itinerary includes more than one Norwegian port, plan each call
-      around your ship&apos;s timetable before you sail. Many southern and
-      coastal cruises pair Kristiansand with{" "}
+      around your ship&apos;s timetable before you sail. Many central and coastal
+      Norway cruises pair Trondheim with{" "}
       <a
         href="https://flamshoreexcursions.com"
         className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
@@ -175,12 +175,26 @@ export const explorePortsFromKristiansand: ExploreNorwegianPortsConfig = {
       >
         Molde Shore Excursions
       </a>
-      , and{" "}
+      ,{" "}
       <a
         href="https://honningsvagshoreexcursions.com"
         className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
       >
         Honningsvag Shore Excursions
+      </a>
+      ,{" "}
+      <a
+        href="https://kristiansandshoreexcursions.com"
+        className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
+      >
+        Kristiansand Shore Excursions
+      </a>
+      , and{" "}
+      <a
+        href="https://hellesyltshoreexcursions.com"
+        className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
+      >
+        Hellesylt Shore Excursions
       </a>
       , each with port guides, tour comparisons, and Cruise Smart Planners built
       for passengers on the same sailing.
@@ -276,6 +290,26 @@ export const explorePortsFromKristiansand: ExploreNorwegianPortsConfig = {
       ctaHref: "https://honningsvagshoreexcursions.com",
       image: siteImages.honningsvagPortCard,
       imageAlt: imageAlts.honningsvagPortCard,
+    },
+    {
+      title: "Kristiansand Shore Excursions",
+      titleHref: "https://kristiansandshoreexcursions.com",
+      description:
+        "Compare Kristiansand harbour walks, fish market tours, port guides, and cruise planning tools.",
+      ctaLabel: "Visit Kristiansand Shore Excursions",
+      ctaHref: "https://kristiansandshoreexcursions.com",
+      image: siteImages.kristiansandPortCard,
+      imageAlt: imageAlts.kristiansandPortCard,
+    },
+    {
+      title: "Hellesylt Shore Excursions",
+      titleHref: "https://hellesyltshoreexcursions.com",
+      description:
+        "Compare Hellesylt waterfall tours, Geirangerfjord excursions, port guides, and cruise planning tools.",
+      ctaLabel: "Visit Hellesylt Shore Excursions",
+      ctaHref: "https://hellesyltshoreexcursions.com",
+      image: siteImages.hellesyltPortCard,
+      imageAlt: imageAlts.hellesyltPortCard,
     },
   ],
 };

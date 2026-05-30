@@ -24,117 +24,159 @@ export type CruisePortDayPlannerConfig = {
   tiers: readonly PortTimeTier[];
 };
 
-export const moldePortDayPlannerConfig: CruisePortDayPlannerConfig = {
-  portName: "Molde",
-  heading: "Molde Cruise Smart Planner™",
+export const kristiansandPortDayPlannerConfig: CruisePortDayPlannerConfig = {
+  portName: "Kristiansand",
+  heading: "Kristiansand Cruise Smart Planner™",
   subtitle: "Plan your shore excursions around your actual time in port.",
-  supportingCopy: "Built specifically for cruise passengers visiting Molde.",
+  supportingCopy:
+    "Built specifically for cruise passengers visiting Kristiansand's walkable harbourfront.",
   returnBufferNote:
     "Always confirm your cruise line's official all-aboard time, as this may be earlier than the published departure time.",
   tiers: [
     {
       minHours: 0,
-      maxHours: 4,
-      label: "Under 4 hours",
-      confidenceScore: 40,
-      confidenceLabel: "Limited Port Call",
+      maxHours: 3,
+      label: "Under 3 hours",
+      confidenceScore: 45,
+      confidenceLabel: "Tight Port Call",
       confidenceMessage:
-        "Best suited to the City of Roses and Mount Varden tour or a self-guided harbour and town walk.",
+        "Best suited to compact harbour walks. Focus on Fiskebrygga, Christiansholm Fortress, and the waterfront promenade.",
       excursions: [
         {
-          label: "Molde City of Roses and Mount Varden Viewpoint",
-          href: "/excursions/molde-city-varden-viewpoint",
+          label: "Walking Exploration of Kristiansand",
+          href: "/excursions/walking-exploration-kristiansand",
         },
-        { label: "Harbour and town walk" },
+        {
+          label: "Harbour, Fortress and Fish Market Walk",
+          href: "/excursions/harbour-fortress-fish-market",
+        },
       ],
       dayPlan: [
-        "Disembark promptly and stay within walking distance of Molde harbour",
-        "Choose the Mount Varden viewpoint tour or a compact town-centre stroll",
-        "Skip Atlantic Ocean Road drives — not enough margin for coach returns",
+        "Disembark promptly and stay within walking distance of the cruise pier",
+        "Walk Fiskebrygga fish market and the harbour promenade",
+        "Visit Christiansholm Fortress if time allows",
         "Be back at the gangway by your recommended return time",
+      ],
+    },
+    {
+      minHours: 3,
+      maxHours: 4,
+      label: "3 to 4 hours",
+      confidenceScore: 70,
+      confidenceLabel: "Good Short Port Call",
+      confidenceMessage:
+        "Enough time for city highlights, a relaxed harbour walk, or a family beach outing near Bystranda.",
+      excursions: [
+        {
+          label: "Kristiansand Highlights",
+          href: "/excursions/kristiansand-highlights",
+        },
+        {
+          label: "Walking Exploration of Kristiansand",
+          href: "/excursions/walking-exploration-kristiansand",
+        },
+        {
+          label: "Family and Beach Day",
+          href: "/excursions/family-beach-day",
+        },
+      ],
+      dayPlan: [
+        "Arrive in Kristiansand and head to your excursion meeting point or start a harbour walk",
+        "Morning: Highlights tour or walking exploration of the fish market and fortress",
+        "Add Bystranda beach time only if return times are confirmed",
+        "Allow 45 minutes before all aboard to reach the cruise port",
       ],
     },
     {
       minHours: 4,
       maxHours: 6,
-      label: "4–6 hours",
-      confidenceScore: 65,
-      confidenceLabel: "Short but Usable Port Call",
-      confidenceMessage:
-        "Good for the Molde to Bud scenic drive or the Atlantic Coast and Fishing Village Experience.",
-      excursions: [
-        {
-          label: "Molde to Bud Scenic Drive and the Atlantic Ocean Road",
-          href: "/excursions/atlantic-ocean-road-bud",
-        },
-        {
-          label: "Atlantic Coast and Fishing Village Experience",
-          href: "/excursions/atlantic-coast-fishing-village",
-        },
-      ],
-      dayPlan: [
-        "Arrive in Molde and head to your excursion meeting point",
-        "Morning or early afternoon: Atlantic Ocean Road and Bud, or coastal village touring",
-        "Add a short harbour walk only if return times are confirmed",
-        "Allow 45 minutes before all aboard to reach the cruise port",
-      ],
-    },
-    {
-      minHours: 6,
-      maxHours: 8,
-      label: "6–8 hours",
+      label: "4 to 6 hours",
       confidenceScore: 90,
       confidenceLabel: "Strong Port Call",
       confidenceMessage:
-        "Enough time for the headline Atlantic Ocean Road tour or a private Bud and coastal drive with harbour time.",
+        "Ideal for the headline city tour or the Baneheia and Ravnedalen nature trek with comfortable return margins.",
       excursions: [
         {
-          label: "Molde to Bud Scenic Drive and the Atlantic Ocean Road",
-          href: "/excursions/atlantic-ocean-road-bud",
+          label: "Baneheia and Ravnedalen Nature Trek",
+          href: "/excursions/baneheia-ravnedalen-nature-trek",
         },
         {
-          label: "Private Molde to Bud and Atlantic Ocean Road",
-          href: "/excursions/private-atlantic-ocean-road-bud",
+          label: "Kristiansand Highlights",
+          href: "/excursions/kristiansand-highlights",
         },
       ],
       dayPlan: [
-        "Arrive in Molde and confirm your first excursion departure",
-        "Morning: Atlantic Ocean Road and Bud scenic drive",
-        "Midday: Lunch in Molde harbour or a short Mount Varden visit if time allows",
+        "Arrive in Kristiansand and confirm your first excursion departure",
+        "Morning: Kristiansand Highlights or Baneheia and Ravnedalen nature trek",
+        "Midday: Lunch at Fiskebrygga or a short harbour stroll if time allows",
         "Return to port by recommended return time",
       ],
     },
     {
-      minHours: 8,
+      minHours: 6,
       maxHours: null,
-      label: "8+ hours",
+      label: "6+ hours",
       confidenceScore: 95,
       confidenceLabel: "Excellent Full Day",
       confidenceMessage:
-        "Ideal for combining a private Atlantic Ocean Road tour, coastal village experiences, and relaxed Molde town time.",
+        "Combine headline touring with relaxed harbour, beach, or museum time for an unhurried southern Norway city break.",
       conversionNote:
-        "Most cruise passengers with 8+ hours in Molde combine the private Atlantic Ocean Road tour with the fishing village experience and unhurried harbour sightseeing.",
+        "Most cruise passengers with 6+ hours in Kristiansand combine the Highlights tour with Baneheia and Ravnedalen, then finish with relaxed harbour, beach, or museum time.",
       excursions: [
         {
-          label: "Private Molde to Bud and Atlantic Ocean Road",
-          href: "/excursions/private-atlantic-ocean-road-bud",
+          label: "Kristiansand Highlights",
+          href: "/excursions/kristiansand-highlights",
         },
         {
-          label: "Atlantic Coast and Fishing Village Experience",
-          href: "/excursions/atlantic-coast-fishing-village",
+          label: "Baneheia and Ravnedalen Nature Trek",
+          href: "/excursions/baneheia-ravnedalen-nature-trek",
         },
-        { label: "Relaxed Molde town time" },
+        { label: "Relaxed harbour, beach or museum time" },
       ],
       dayPlan: [
         "Arrive early and confirm your first excursion departure",
-        "Morning: Private Atlantic Ocean Road and Bud tour",
-        "Midday: Lunch in Molde's City of Roses harbour area",
-        "Afternoon: Fishing village experience or Mount Varden viewpoint",
-        "Keep the final hour free near the cruise port for a calm return to ship",
+        "Morning: Kristiansand Highlights city-and-culture tour",
+        "Midday: Lunch at Fiskebrygga or Bystranda beach area",
+        "Afternoon: Baneheia and Ravnedalen nature trek or unhurried harbour sightseeing",
+        "Keep the final hour free near the cruise pier for a calm return to ship",
       ],
     },
   ],
 };
+
+export const plannerInterestGroups = [
+  {
+    title: "Active",
+    items: [
+      {
+        label: "Baneheia and Ravnedalen Nature Trek",
+        href: "/excursions/baneheia-ravnedalen-nature-trek",
+      },
+    ],
+  },
+  {
+    title: "Easy walking",
+    items: [
+      {
+        label: "Walking Exploration of Kristiansand",
+        href: "/excursions/walking-exploration-kristiansand",
+      },
+      {
+        label: "Harbour, Fortress and Fish Market Walk",
+        href: "/excursions/harbour-fortress-fish-market",
+      },
+    ],
+  },
+  {
+    title: "Family",
+    items: [
+      {
+        label: "Kristiansand Family and Beach Day",
+        href: "/excursions/family-beach-day",
+      },
+    ],
+  },
+] as const;
 
 export const RECOMMENDED_RETURN_BUFFER_MINUTES = 45;
 export const LATEST_COMFORTABLE_RETURN_BUFFER_MINUTES = 30;

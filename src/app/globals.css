@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1e293b;
-  --surface-muted: #eef2f5;
-  --navy: #0d3b66;
-  --navy-deep: #082848;
-  --norway-blue: #1a5f8a;
-  --norway-blue-hover: #164f73;
-  --norway-red: #c4848f;
-  --mountain-slate: #4a5568;
-  --mist-grey: #e8ecef;
-  --border-light: #d1d9e0;
+  --background: #faf8f5;
+  --foreground: #1a2a3a;
+  --surface-muted: #f3ece3;
+  --navy: #1a3a5c;
+  --navy-deep: #0f2840;
+  --norway-blue: #2d7eb8;
+  --norway-blue-hover: #256aa0;
+  --norway-red: #4a7c59;
+  --sand-cream: #f3ece3;
+  --harbour-mist: #e8eef2;
+  --border-light: #d9cfc4;
 }
 
 @theme inline {
@@ -115,9 +115,9 @@ body {
 .page-hero-overlay {
   background: linear-gradient(
     180deg,
-    rgb(8 40 72 / 0.82) 0%,
-    rgb(13 59 102 / 0.68) 55%,
-    rgb(74 85 104 / 0.45) 100%
+    rgb(15 40 64 / 0.78) 0%,
+    rgb(26 58 92 / 0.62) 50%,
+    rgb(74 124 89 / 0.35) 100%
   );
 }
 

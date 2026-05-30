@@ -4,46 +4,52 @@ import { siteConfig } from "@/lib/site-config";
 
 const planYourVisitLinks = [
   { label: "All Excursions", href: "/excursions" },
-  { label: "Molde Port Guide", href: "/molde-port-guide" },
-  { label: "One Day in Molde", href: "/one-day-in-molde" },
-  { label: "Is Molde Worth Visiting?", href: "/is-molde-worth-visiting" },
-  { label: "Best Time to Visit Molde", href: "/best-time-to-visit-molde" },
+  { label: "Kristiansand Port Guide", href: "/kristiansand-port-guide" },
+  { label: "One Day in Kristiansand", href: "/one-day-in-kristiansand" },
+  {
+    label: "Is Kristiansand Worth Visiting?",
+    href: "/is-kristiansand-worth-visiting",
+  },
+  {
+    label: "Best Time to Visit Kristiansand",
+    href: "/best-time-to-visit-kristiansand",
+  },
 ] as const;
 
 const cruiseToolsLinks = [
   {
-    label: "Atlantic Ocean Road & Bud",
-    href: "/excursions/atlantic-ocean-road-bud",
+    label: "Kristiansand Highlights",
+    href: "/excursions/kristiansand-highlights",
   },
   {
-    label: "Private Atlantic Ocean Road",
-    href: "/excursions/private-atlantic-ocean-road-bud",
+    label: "Baneheia & Ravnedalen Trek",
+    href: "/excursions/baneheia-ravnedalen-nature-trek",
   },
   {
-    label: "City of Roses & Mount Varden",
-    href: "/excursions/molde-city-varden-viewpoint",
+    label: "Walking Exploration",
+    href: "/excursions/walking-exploration-kristiansand",
   },
   {
-    label: "Fishing Village Experience",
-    href: "/excursions/atlantic-coast-fishing-village",
+    label: "Family & Beach Day",
+    href: "/excursions/family-beach-day",
   },
 ] as const;
 
 const whyBookWithUs = [
   "Cruise passenger friendly",
   "Return to ship timing guidance",
-  "Atlantic coast specialists",
+  "Southern Norway specialists",
 ] as const;
 
 const trustBullets = [
   "Return-to-ship friendly itineraries",
-  "Atlantic Ocean Road and coastal touring",
-  "City of Roses and Romsdal panorama planning",
+  "Walkable cruise port planning",
+  "Harbour, beach and forest trail expertise",
 ] as const;
 
 const ctaSecondaryLinks = [
-  { label: "Molde Port Guide", href: "/molde-port-guide" },
-  { label: "One Day in Molde", href: "/one-day-in-molde" },
+  { label: "Kristiansand Port Guide", href: "/kristiansand-port-guide" },
+  { label: "One Day in Kristiansand", href: "/one-day-in-kristiansand" },
 ] as const;
 
 function FooterColumn({
@@ -69,11 +75,11 @@ export function SiteFooter() {
       <section className="border-t border-white/10 bg-navy text-white">
         <div className="mx-auto max-w-3xl px-4 py-10 text-center sm:px-6 sm:py-12">
           <h2 className="text-xl font-bold sm:text-2xl">
-            Ready to plan your Molde cruise day?
+            Ready to plan your Kristiansand cruise day?
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-white/80 sm:text-base">
             Browse shore excursions, port guides, and planning tools designed
-            specifically for cruise passengers visiting Molde.
+            specifically for cruise passengers visiting Kristiansand.
           </p>
           <Link
             href={siteConfig.shoreExcursionsPath}
@@ -112,9 +118,9 @@ export function SiteFooter() {
                 {siteConfig.name}
               </Link>
               <p className="mt-3 max-w-sm text-sm leading-6 text-white/65">
-                Independent Molde cruise port guides and shore excursion
-                planning for passengers visiting the Atlantic Ocean Road, Bud
-                fishing village, and Romsdal mountain panoramas.
+                Independent Kristiansand cruise port guides and shore excursion
+                planning for passengers visiting southern Norway&apos;s
+                harbourfront, beaches, fortress, and walkable city centre.
               </p>
               <ul className="mt-4 space-y-2">
                 {trustBullets.map((item) => (
@@ -147,7 +153,7 @@ export function SiteFooter() {
                 </ul>
               </FooterColumn>
 
-              <FooterColumn title="Cruise Tools">
+              <FooterColumn title="Featured Tours">
                 <ul className="space-y-2">
                   {cruiseToolsLinks.map((link) => (
                     <li key={link.href}>

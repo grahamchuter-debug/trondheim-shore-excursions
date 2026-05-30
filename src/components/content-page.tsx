@@ -52,12 +52,12 @@ export function ContentPage({
   faqs,
   breadcrumbs,
   belowHero,
-  ctaTitle = "Plan your Molde shore excursion",
+  ctaTitle = "Plan your Kristiansand shore excursion",
   ctaText = "Browse cruise-friendly tours designed around your ship's time in port, with enough margin to return before all aboard.",
   ctaHref = siteConfig.shoreExcursionsPath,
-  ctaButtonLabel = "View Molde shore excursions",
+  ctaButtonLabel = "View Kristiansand shore excursions",
   showShipReassurance = true,
-  relatedSectionTitle = "Related Molde guides",
+  relatedSectionTitle = "Related Kristiansand guides",
 }: ContentPageProps) {
   const schema = [
     buildWebPageSchema({
@@ -84,7 +84,7 @@ export function ContentPage({
           </p>
           {showShipReassurance ? (
             <p className="badge-accent-red mt-5 inline-flex rounded-full px-4 py-1.5 text-xs font-medium text-white/95 backdrop-blur-sm sm:text-sm">
-              Return to ship on time — cruise passenger friendly
+              Return to ship on time, cruise passenger friendly
             </p>
           ) : null}
         </PageHero>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 import {
-  moldePortDayPlannerConfig,
+  kristiansandPortDayPlannerConfig,
   calculatePortMinutes,
   formatPortDuration,
   getConfidenceTone,
@@ -59,7 +59,7 @@ function RecommendationCard({
 }
 
 export function CruisePortDayPlanner({
-  config = moldePortDayPlannerConfig,
+  config = kristiansandPortDayPlannerConfig,
 }: CruisePortDayPlannerProps) {
   const [arrival, setArrival] = useState("");
   const [departure, setDeparture] = useState("");
@@ -193,7 +193,7 @@ export function CruisePortDayPlanner({
                       Recommended return to port
                     </dt>
                     <dd className="mt-1 text-lg font-semibold text-[var(--norway-blue)]">
-                      {result.returnGuidance.recommendedReturn ?? "—"}
+                      {result.returnGuidance.recommendedReturn ?? "Not set"}
                     </dd>
                     <dd className="text-xs text-slate-500">45 minutes before departure</dd>
                   </div>
@@ -202,7 +202,7 @@ export function CruisePortDayPlanner({
                       Latest comfortable return
                     </dt>
                     <dd className="mt-1 text-lg font-semibold text-slate-900">
-                      {result.returnGuidance.latestComfortableReturn ?? "—"}
+                      {result.returnGuidance.latestComfortableReturn ?? "Not set"}
                     </dd>
                     <dd className="text-xs text-slate-500">30 minutes before departure</dd>
                   </div>

@@ -9,7 +9,7 @@ export function buildOrganizationSchema() {
     description: siteConfig.defaultDescription,
     areaServed: {
       "@type": "Place",
-      name: "Molde, Møre og Romsdal, Norway",
+      name: "Kristiansand, Agder, Norway",
     },
   };
 }
@@ -92,7 +92,7 @@ export function buildBreadcrumbSchema(
 
 export function buildItemListSchema(
   items: readonly { name: string; description: string }[],
-  listName = "Popular Molde shore excursions for cruise passengers",
+  listName = "Popular Kristiansand shore excursions for cruise passengers",
 ) {
   return {
     "@context": "https://schema.org",

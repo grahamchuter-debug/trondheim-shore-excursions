@@ -1,13 +1,13 @@
 import { imageAlts, siteImages } from "@/lib/site-images";
 
 export const siteConfig = {
-  name: "Molde Shore Excursions",
-  url: "https://moldeshoreexcursions.com",
+  name: "Kristiansand Shore Excursions",
+  url: "https://kristiansandshoreexcursions.com",
   locale: "en_GB",
   defaultDescription:
-    "Independent Molde cruise port guides and shore excursion planning for passengers visiting Norway's City of Roses, the Atlantic Ocean Road, Bud fishing village, and Romsdal mountain panoramas.",
+    "Independent Kristiansand cruise port guides and shore excursion planning for passengers visiting southern Norway's harbourfront, fish market, fortress, beaches, forest trails, and walkable city centre.",
   defaultOgImage: siteImages.hero,
   defaultOgImageAlt: imageAlts.hero,
-  copyrightEntity: "Molde Shore Excursions",
+  copyrightEntity: "Kristiansand Shore Excursions",
   shoreExcursionsPath: "/excursions",
 } as const;

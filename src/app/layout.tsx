@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default:
-      "Molde Shore Excursions | Atlantic Ocean Road Tours & Cruise Port Guides",
+      "Kristiansand Shore Excursions | Harbour Tours & Cruise Port Guides",
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.defaultDescription,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Molde Shore Excursions | Atlantic Ocean Road Tours & Cruise Port Guides",
+      "Kristiansand Shore Excursions | Harbour Tours & Cruise Port Guides",
     description: siteConfig.defaultDescription,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Molde Shore Excursions | Atlantic Ocean Road Tours & Cruise Port Guides",
+      "Kristiansand Shore Excursions | Harbour Tours & Cruise Port Guides",
     description: siteConfig.defaultDescription,
     images: [siteConfig.defaultOgImage],
   },

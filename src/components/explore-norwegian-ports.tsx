@@ -44,19 +44,6 @@ export function ExploreNorwegianPorts({
           <div className="text-base leading-7 text-slate-700 sm:leading-8">
             {config.intro}
           </div>
-
-          <ul className="mt-5 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-2">
-            {config.cards.map((card) => (
-              <li key={card.titleHref}>
-                <a
-                  href={card.titleHref}
-                  className="font-medium text-[var(--norway-blue)] underline-offset-2 transition hover:underline"
-                >
-                  {card.title}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
     );
@@ -127,12 +114,12 @@ export function ExploreNorwegianPorts({
   );
 }
 
-export const explorePortsFromMolde: ExploreNorwegianPortsConfig = {
+export const explorePortsFromKristiansand: ExploreNorwegianPortsConfig = {
   intro: (
     <>
       If your itinerary includes more than one Norwegian port, plan each call
-      around your ship&apos;s timetable before you sail. Many coastal cruises
-      pair Molde with{" "}
+      around your ship&apos;s timetable before you sail. Many southern and
+      coastal cruises pair Kristiansand with{" "}
       <a
         href="https://flamshoreexcursions.com"
         className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
@@ -174,14 +161,28 @@ export const explorePortsFromMolde: ExploreNorwegianPortsConfig = {
       >
         Olden Shore Excursions
       </a>
-      , and{" "}
+      ,{" "}
       <a
         href="https://eidfjordshoreexcursions.com"
         className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
       >
         Eidfjord Shore Excursions
-      </a>{" "}
-      — each with port guides, tour comparisons, and Cruise Smart Planners built
+      </a>
+      ,{" "}
+      <a
+        href="https://moldeshoreexcursions.com"
+        className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
+      >
+        Molde Shore Excursions
+      </a>
+      , and{" "}
+      <a
+        href="https://honningsvagshoreexcursions.com"
+        className="font-medium text-[var(--norway-blue)] underline-offset-2 hover:underline"
+      >
+        Honningsvag Shore Excursions
+      </a>
+      , each with port guides, tour comparisons, and Cruise Smart Planners built
       for passengers on the same sailing.
     </>
   ),
@@ -255,6 +256,26 @@ export const explorePortsFromMolde: ExploreNorwegianPortsConfig = {
       ctaHref: "https://eidfjordshoreexcursions.com",
       image: siteImages.eidfjordPortCard,
       imageAlt: imageAlts.eidfjordPortCard,
+    },
+    {
+      title: "Molde Shore Excursions",
+      titleHref: "https://moldeshoreexcursions.com",
+      description:
+        "Compare Molde Atlantic Ocean Road tours, Bud fishing village, port guides, and cruise planning tools.",
+      ctaLabel: "Visit Molde Shore Excursions",
+      ctaHref: "https://moldeshoreexcursions.com",
+      image: siteImages.moldePortCard,
+      imageAlt: imageAlts.moldePortCard,
+    },
+    {
+      title: "Honningsvag Shore Excursions",
+      titleHref: "https://honningsvagshoreexcursions.com",
+      description:
+        "Compare North Cape tours, Arctic wildlife safaris, port guides, and cruise planning tools.",
+      ctaLabel: "Visit Honningsvag Shore Excursions",
+      ctaHref: "https://honningsvagshoreexcursions.com",
+      image: siteImages.honningsvagPortCard,
+      imageAlt: imageAlts.honningsvagPortCard,
     },
   ],
 };

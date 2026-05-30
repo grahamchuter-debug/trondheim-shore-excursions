@@ -10,8 +10,8 @@ export const privateCustomTrondheimTourExcursion: ExcursionData = {
   metaTitle: "Private Custom Trondheim Tour for Cruise Passengers",
   metaDescription:
     "Book a Private Custom Trondheim Tour. 2 to 9 hours, customized sightseeing, flexible start time. Cathedral, Bakklandet, waterfront, viewpoints or museums. Best for couples, families and small groups.",
-  heroImage: siteImages.privateTour,
-  heroImageAlt: imageAlts.privateCard,
+  heroImage: siteImages.hero,
+  heroImageAlt: imageAlts.hero,
   heroBadge: "Premium private option",
   summary: {
     duration: "2 to 9 hours possible",

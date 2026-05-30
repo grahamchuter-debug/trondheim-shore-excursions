@@ -10,8 +10,8 @@ export const trondheimWaterfrontTourExcursion: ExcursionData = {
   metaTitle: "Trondheim Waterfront Guided Tour for Cruise Passengers",
   metaDescription:
     "Book the Trondheim Waterfront Guided Tour. River and fjord waterfront, new and old harbour, colourful wharves, bridges, and photo-friendly routes for cruise passengers.",
-  heroImage: siteImages.waterfrontTour,
-  heroImageAlt: imageAlts.waterfrontCard,
+  heroImage: siteImages.hero,
+  heroImageAlt: imageAlts.hero,
   heroBadge: "Scenic photo walking route",
   summary: {
     duration: "Approx. 2 hours",

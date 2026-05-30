@@ -1,24 +1,19 @@
-/** Wikimedia Commons thumb URLs for Trondheim imagery. */
+/** Local images bundled for static export reliability. */
 
-const nidarosCathedral =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nidaros_Cathedral_from_south.jpg/1280px-Nidaros_Cathedral_from_south.jpg";
-const bakklandet =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bakklandet_Trondeim.jpg/1280px-Bakklandet_Trondeim.jpg";
-const gamleBybro =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Gamle_Bybro_03.jpg/1280px-Gamle_Bybro_03.jpg";
-const trondheimWaterfront =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Trondheim_havn.jpg/1280px-Trondheim_havn.jpg";
-const nidelva =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nidelva_Trondheim.jpg/1280px-Nidelva_Trondheim.jpg";
-const historicalWharves =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Trondheim_-_Nedre_Bakkegata.jpg/1280px-Trondheim_-_Nedre_Bakkegata.jpg";
-const stiftsgarden =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Stiftsg%C3%A5rden_Trondheim.jpg/1280px-Stiftsg%C3%A5rden_Trondheim.jpg";
-const trondheimHarbour =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Trondheim_havn_2010.jpg/1280px-Trondheim_havn_2010.jpg";
+const trondheimHero = "/images/trondheim-hero.png";
+const nidarosCathedral = "/images/nidaros-cathedral.jpg";
+const bakklandet = "/images/bakklandet.jpg";
+const gamleBybro = "/images/gamle-bybro.jpg";
+const trondheimWaterfront = "/images/trondheim-waterfront.jpg";
+const nidelva = "/images/nidelva.jpg";
+const historicalWharves = "/images/historical-wharves.jpg";
+const stiftsgarden = "/images/stiftsgarden.jpg";
+
+const headerHeroAlt =
+  "Aerial view of Trondheim with Nidaros Cathedral, green spire, historic red-roofed buildings, and Trondheimsfjord in the background";
 
 export const siteImages = {
-  hero: nidarosCathedral,
+  hero: trondheimHero,
   nidarosCathedral,
   bakklandet,
   gamleBybro,
@@ -26,11 +21,11 @@ export const siteImages = {
   nidelva,
   historicalWharves,
   stiftsgarden,
-  harbour: trondheimHarbour,
-  portGuide: gamleBybro,
-  worthVisiting: bakklandet,
-  oneDay: nidarosCathedral,
-  bestTime: trondheimWaterfront,
+  harbour: trondheimHero,
+  portGuide: trondheimHero,
+  worthVisiting: trondheimHero,
+  oneDay: trondheimHero,
+  bestTime: trondheimHero,
   cityWalkTour: nidarosCathedral,
   waterfrontTour: nidelva,
   natureHikeTour: bakklandet,
@@ -61,41 +56,36 @@ export const siteImages = {
 } as const;
 
 export const imageAlts = {
-  hero: "Nidaros Cathedral in Trondheim, Trondheim Shore Excursions homepage hero",
+  hero: headerHeroAlt,
   nidarosCathedral:
-    "Nidaros Cathedral viewed from the south, Norway's national shrine in Trondheim",
+    "Nidaros Cathedral west front in Trondheim, Norway's national shrine and pilgrimage church",
   bakklandet:
-    "Colourful wooden houses along Bakklandet across the Nidelva river in Trondheim",
+    "Colourful wooden houses in Bakklandet district overlooking the Nidelva river in Trondheim",
   gamleBybro:
-    "Gamle Bybro Old Town Bridge with red gates spanning the Nidelva in Trondheim",
+    "View from Gamle Bybro Old Town Bridge across the Nidelva toward Bakklandet in Trondheim",
   waterfront:
-    "Trondheim waterfront and harbour with cruise-friendly city views",
+    "Trondheim harbour and waterfront with cruise-friendly city views along the Trondheimsfjord",
   nidelva:
-    "Nidelva river flowing through Trondheim with historic wharves and wooden buildings",
+    "Historic wooden buildings along the Nidelva river in central Trondheim",
   historicalWharves:
-    "Historic wharves and Nedre Bakkegata along the Nidelva in Trondheim",
+    "Bakkegata historic wharf street viewed from Nedre Møllenberg gate in Trondheim",
   stiftsgarden:
-    "Stiftsgården Royal Residence on Munkegata, Trondheim's main square area",
-  harbour:
-    "Trondheim harbour with cruise berths and waterfront cityscape",
-  portGuide:
-    "Gamle Bybro Old Town Bridge, Trondheim cruise port guide for shore excursion passengers",
-  worthVisiting:
-    "Bakklandet wooden houses, is Trondheim worth visiting on a cruise",
-  oneDay:
-    "Nidaros Cathedral and historic Trondheim centre on a one-day cruise itinerary",
-  bestTime:
-    "Trondheim waterfront in summer light, best time to visit Trondheim on a cruise",
+    "Stiftsgården Royal Residence on Munkegata in Trondheim's main square area",
+  harbour: headerHeroAlt,
+  portGuide: headerHeroAlt,
+  worthVisiting: headerHeroAlt,
+  oneDay: headerHeroAlt,
+  bestTime: headerHeroAlt,
   cityWalkCard:
     "Nidaros Cathedral on the Trondheim City Walk shore excursion for cruise passengers",
   waterfrontCard:
     "Nidelva river and waterfront on the Trondheim Waterfront Guided Tour",
   natureHikeCard:
-    "Bakklandet and city viewpoints on the Trondheim Nature and City Hike",
+    "Bakklandet wooden houses on the Trondheim Nature and City Hike shore excursion",
   familyCard:
-    "Old Town Bridge and family-friendly streets on the Trondheim Family Walking Tour",
+    "Gamle Bybro Old Town Bridge on the Trondheim Family Walking Tour for cruise passengers",
   privateCard:
-    "Stiftsgården Royal Residence on a Private Custom Trondheim Tour",
+    "Stiftsgården Royal Residence on a Private Custom Trondheim Tour for cruise passengers",
   flamPortCard:
     "Flam harbour with a cruise ship at the pier, Flam Shore Excursions",
   bergenPortCard:

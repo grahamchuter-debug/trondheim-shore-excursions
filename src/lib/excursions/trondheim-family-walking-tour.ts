@@ -10,8 +10,8 @@ export const trondheimFamilyWalkingTourExcursion: ExcursionData = {
   metaTitle: "Trondheim Family Walking Tour for Cruise Passengers with Children",
   metaDescription:
     "Book the Trondheim Family Walking Tour. Child-friendly city walk, cosy wooden streets, Nidaros Cathedral stories, Vikings, saints and kings. Best for families on a cruise port day.",
-  heroImage: siteImages.familyTour,
-  heroImageAlt: imageAlts.familyCard,
+  heroImage: siteImages.hero,
+  heroImageAlt: imageAlts.hero,
   heroBadge: "Family-friendly city walk",
   summary: {
     duration: "Approx. 2 hours",

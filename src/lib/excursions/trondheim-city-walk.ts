@@ -10,8 +10,8 @@ export const trondheimCityWalkExcursion: ExcursionData = {
   metaTitle: "Trondheim City Walk Shore Excursion for Cruise Passengers",
   metaDescription:
     "Book the Trondheim City Walk shore excursion for cruise passengers. Nidaros Cathedral, Stiftsgården, main square, Old Town Bridge, Bakklandet, and historical wharves in approx. 2 hours.",
-  heroImage: siteImages.cityWalkTour,
-  heroImageAlt: imageAlts.cityWalkCard,
+  heroImage: siteImages.hero,
+  heroImageAlt: imageAlts.hero,
   heroBadge: "Main walking tour for first-time visitors",
   summary: {
     duration: "Approx. 2 hours",

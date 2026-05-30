@@ -10,8 +10,8 @@ export const trondheimNatureCityHikeExcursion: ExcursionData = {
   metaTitle: "Trondheim Nature and City Hike for Active Cruise Passengers",
   metaDescription:
     "Book the Trondheim Nature and City Hike shore excursion. Nature trails, city viewpoints, walk into historic centre with sights and stories. Approx. 4 hours for active cruise passengers.",
-  heroImage: siteImages.natureHikeTour,
-  heroImageAlt: imageAlts.natureHikeCard,
+  heroImage: siteImages.hero,
+  heroImageAlt: imageAlts.hero,
   heroBadge: "Active option for longer port calls",
   summary: {
     duration: "Approx. 4 hours",

@@ -9,7 +9,7 @@ export const trondheimWaterfrontTourExcursion: ExcursionData = {
   lead: "A scenic photo walking route along Trondheim's river and fjord waterfront, covering new and old harbour, colourful wharves, bridges, and Solsiden harbour atmosphere where suitable.",
   metaTitle: "Trondheim Waterfront Guided Tour for Cruise Passengers",
   metaDescription:
-    "Book the Trondheim Waterfront Guided Tour. River and fjord waterfront, new and old harbour, colourful wharves, bridges, and photo-friendly routes for cruise passengers.",
+    "Explore the Trondheim Waterfront Guided Tour. River and fjord waterfront, new and old harbour, colourful wharves, bridges, and photo-friendly routes for cruise passengers.",
   heroImage: siteImages.hero,
   heroImageAlt: imageAlts.hero,
   heroBadge: "Scenic photo walking route",
@@ -106,8 +106,8 @@ export const trondheimWaterfrontTourExcursion: ExcursionData = {
     { label: "Trondheim port guide", href: "/trondheim-port-guide" },
   ],
   bookingHref: "/excursions",
-  bookingLabel: "Book this excursion",
-  ctaTitle: "Ready to book your Trondheim Waterfront tour?",
+  bookingLabel: "Explore Trondheim excursions",
+  ctaTitle: "Ready to explore Trondheim Waterfront tour?",
   ctaText:
     "Walk the Nidelva, colourful wharves, and harbour bridges with a guide who knows the best photo stops.",
 };

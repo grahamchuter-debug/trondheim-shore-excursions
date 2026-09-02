@@ -9,7 +9,7 @@ export const trondheimNatureCityHikeExcursion: ExcursionData = {
   lead: "An active shore excursion combining nature around Trondheim, a city viewpoint, and a walk into the city centre with important sights and local stories. Approximately four hours for active cruise passengers.",
   metaTitle: "Trondheim Nature and City Hike for Active Cruise Passengers",
   metaDescription:
-    "Book the Trondheim Nature and City Hike shore excursion. Nature trails, city viewpoints, walk into historic centre with sights and stories. Approx. 4 hours for active cruise passengers.",
+    "Explore the Trondheim Nature and City Hike shore excursion. Nature trails, city viewpoints, walk into historic centre with sights and stories. Approx. 4 hours for active cruise passengers.",
   heroImage: siteImages.hero,
   heroImageAlt: imageAlts.hero,
   heroBadge: "Active option for longer port calls",
@@ -106,8 +106,8 @@ export const trondheimNatureCityHikeExcursion: ExcursionData = {
     { label: "One day in Trondheim", href: "/one-day-in-trondheim" },
   ],
   bookingHref: "/excursions",
-  bookingLabel: "Book this excursion",
-  ctaTitle: "Ready to book your Trondheim Nature and City Hike?",
+  bookingLabel: "Explore Trondheim excursions",
+  ctaTitle: "Ready to explore Trondheim Nature and City Hike?",
   ctaText:
     "Combine nature trails, city viewpoints, and historic sights with a guide who keeps cruise timetables in mind.",
 };

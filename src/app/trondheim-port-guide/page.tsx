@@ -22,6 +22,7 @@ const breadcrumbs = [
 ] as const;
 
 const relatedLinks = [
+  { label: "Ship schedule", href: "/ship-schedule" },
   { label: "Shore excursions", href: "/excursions" },
   { label: "One day in Trondheim", href: "/one-day-in-trondheim" },
   {

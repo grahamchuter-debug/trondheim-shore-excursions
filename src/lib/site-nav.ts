@@ -1,6 +1,6 @@
 export const siteNavLinks = [
   { label: "Excursions", href: "/excursions" },
-  { label: "Port Guide", href: "/trondheim-port-guide" },
-  { label: "One Day", href: "/one-day-in-trondheim" },
-  { label: "Worth Visiting?", href: "/is-trondheim-worth-visiting" },
+  { label: "Plan your day", href: "/one-day-in-trondheim" },
+  { label: "Ship schedule", href: "/ship-schedule" },
+  { label: "Port guide", href: "/trondheim-port-guide" },
 ] as const;

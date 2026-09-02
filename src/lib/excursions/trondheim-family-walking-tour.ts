@@ -9,7 +9,7 @@ export const trondheimFamilyWalkingTourExcursion: ExcursionData = {
   lead: "A child-friendly city walk through cosy wooden streets with playground-style stops where suitable, Nidaros Cathedral stories, and tales of Vikings, saints and kings. Best for families on a Trondheim cruise day.",
   metaTitle: "Trondheim Family Walking Tour for Cruise Passengers with Children",
   metaDescription:
-    "Book the Trondheim Family Walking Tour. Child-friendly city walk, cosy wooden streets, Nidaros Cathedral stories, Vikings, saints and kings. Best for families on a cruise port day.",
+    "Explore the Trondheim Family Walking Tour. Child-friendly city walk, cosy wooden streets, Nidaros Cathedral stories, Vikings, saints and kings. Best for families on a cruise port day.",
   heroImage: siteImages.hero,
   heroImageAlt: imageAlts.hero,
   heroBadge: "Family-friendly city walk",
@@ -106,8 +106,8 @@ export const trondheimFamilyWalkingTourExcursion: ExcursionData = {
     { label: "One day in Trondheim", href: "/one-day-in-trondheim" },
   ],
   bookingHref: "/excursions",
-  bookingLabel: "Book this excursion",
-  ctaTitle: "Ready to book your Trondheim Family Walking Tour?",
+  bookingLabel: "Explore Trondheim excursions",
+  ctaTitle: "Ready to explore Trondheim Family Walking Tour?",
   ctaText:
     "Explore Bakklandet, the Old Town Bridge, and cathedral stories with a guide who keeps families and cruise timetables in mind.",
 };

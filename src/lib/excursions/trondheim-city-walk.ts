@@ -9,7 +9,7 @@ export const trondheimCityWalkExcursion: ExcursionData = {
   lead: "Trondheim's main walking tour covering Nidaros Cathedral, Royal Residence / Stiftsgården, the main square, Old Town Bridge, Bakklandet, and historical wharves in approximately two hours of easy to moderate walking.",
   metaTitle: "Trondheim City Walk Shore Excursion for Cruise Passengers",
   metaDescription:
-    "Book the Trondheim City Walk shore excursion for cruise passengers. Nidaros Cathedral, Stiftsgården, main square, Old Town Bridge, Bakklandet, and historical wharves in approx. 2 hours.",
+    "Explore the Trondheim City Walk shore excursion for cruise passengers. Nidaros Cathedral, Stiftsgården, main square, Old Town Bridge, Bakklandet, and historical wharves in approx. 2 hours.",
   heroImage: siteImages.hero,
   heroImageAlt: imageAlts.hero,
   heroBadge: "Main walking tour for first-time visitors",
@@ -106,8 +106,8 @@ export const trondheimCityWalkExcursion: ExcursionData = {
     { label: "One day in Trondheim", href: "/one-day-in-trondheim" },
   ],
   bookingHref: "/excursions",
-  bookingLabel: "Book this excursion",
-  ctaTitle: "Ready to book your Trondheim City Walk?",
+  bookingLabel: "Explore Trondheim excursions",
+  ctaTitle: "Ready to explore Trondheim City Walk?",
   ctaText:
     "See Nidaros Cathedral, Bakklandet, and the Old Town Bridge with a guide who understands cruise timetables.",
 };

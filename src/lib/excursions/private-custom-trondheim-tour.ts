@@ -9,7 +9,7 @@ export const privateCustomTrondheimTourExcursion: ExcursionData = {
   lead: "A premium private tour from 2 to 9 hours with customized sightseeing, flexible start time, and your choice of Nidaros Cathedral, Bakklandet, waterfront, viewpoints, or museums depending on interest. Best for couples, families, and small groups.",
   metaTitle: "Private Custom Trondheim Tour for Cruise Passengers",
   metaDescription:
-    "Book a Private Custom Trondheim Tour. 2 to 9 hours, customized sightseeing, flexible start time. Cathedral, Bakklandet, waterfront, viewpoints or museums. Best for couples, families and small groups.",
+    "Explore a Private Custom Trondheim Tour. 2 to 9 hours, customized sightseeing, flexible start time. Cathedral, Bakklandet, waterfront, viewpoints or museums. Best for couples, families and small groups.",
   heroImage: siteImages.hero,
   heroImageAlt: imageAlts.hero,
   heroBadge: "Premium private option",
@@ -106,8 +106,8 @@ export const privateCustomTrondheimTourExcursion: ExcursionData = {
     { label: "Trondheim port guide", href: "/trondheim-port-guide" },
   ],
   bookingHref: "/excursions",
-  bookingLabel: "Book this excursion",
-  ctaTitle: "Ready to book your Private Custom Trondheim Tour?",
+  bookingLabel: "Explore Trondheim excursions",
+  ctaTitle: "Ready to explore Private Custom Trondheim Tour?",
   ctaText:
     "Design your perfect Trondheim port day with a private guide who understands cruise timetables.",
 };

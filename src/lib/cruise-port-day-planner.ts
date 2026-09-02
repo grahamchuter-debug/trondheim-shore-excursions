@@ -26,10 +26,10 @@ export type CruisePortDayPlannerConfig = {
 
 export const trondheimPortDayPlannerConfig: CruisePortDayPlannerConfig = {
   portName: "Trondheim",
-  heading: "Trondheim Cruise Smart Planner™",
-  subtitle: "Plan your shore excursions around your actual time in port.",
+  heading: "Trondheim port-day planner",
+  subtitle: "Think through shore options around your hours in port.",
   supportingCopy:
-    "Built specifically for cruise passengers visiting Trondheim's walkable historic centre and riverfront.",
+    "A practical checklist for cruise passengers visiting Trondheim's walkable historic centre and riverfront.",
   returnBufferNote:
     "Always confirm your cruise line's official all-aboard time, as this may be earlier than the published departure time.",
   tiers: [
